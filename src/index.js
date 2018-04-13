@@ -1,4 +1,4 @@
-import printMe from './print.js';
+import { printMe } from './print.js';
 function component() {
     var element = document.createElement('div');
     var btn = document.createElement('button');
@@ -7,7 +7,7 @@ function component() {
     btn.innerHTML = "点我点我";
     btn.onclick = printMe;
 
-    element.appendChild(btn);
+    element.appendChilds(btn);
 
     return element;
 }
